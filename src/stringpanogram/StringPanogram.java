@@ -5,6 +5,8 @@
  */
 package stringpanogram;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Влад
@@ -16,7 +18,10 @@ public class StringPanogram {
      */
     public static void main(String[] args) {
         // Создаем строку с английской фразой, содержащей все буквы алфавита
-        String text = "the quick brown fox jumps over the lazy dog";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите фразу: ");
+        String text = scanner.nextLine();
+//        String text = "the quick brown fox jumps over the lazy dog";
         
         // Создаем переменную num типа интеджер и присваеваем ей значение нуля
         // Она нам нужна для того, чтобы мы смогли выяснить, есть ли в таксе все буквы алфавита
